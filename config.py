@@ -2,7 +2,9 @@ import os
 from distutils.command.config import config
 
 
+
 class Config:
+    SQLALCHEMY_DATABASE_URI = "postgresql= psycopg2://moringa:1234@localhost/Pitch_in_1_min"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 class TestConfig(Config):
