@@ -2,7 +2,7 @@ from distutils.command.config import config
 
 
 class Config:
-    pass
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 class ProdConfig(Config):
     pass
